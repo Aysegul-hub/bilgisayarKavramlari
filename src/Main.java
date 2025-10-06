@@ -1,15 +1,49 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    private static Object ilkBosluk;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    public static void main(String[] args) {
+
+        System.out.println("Hello World");
+        System.out.println("Hoşgeldin Ayşegül Delialioğlu");
+        // unutmamak için yeniden çalışıyorum.
+        /*deneme mesaj
+
+
+         */
+
+
+        int n = 5;
+        int b = 2;
+        int ayse;
+        ayse = 15;
+        System.out.println("merhaba ayse " + b);
+        float pi = 3.14F; //float yapımında sonuna F yaz ya da double yap
+        String name = "benim adım aysegul";
+        System.out.println(name);
+        double sayi = 3.14;
+        System.out.println(sayi);
+        name = name.toUpperCase();
+        int ilkBosluk = name.indexOf(" ");
+        System.out.println(ilkBosluk);
+
+        String a = "benim adım aysegul";
+        a = a.toUpperCase();
+        a = a.toLowerCase();
+        int firstGaps = a.indexOf('m'); //indexOf(" ") kalıbı int ile tanımlıdır çünkü bize bir sayı değeri döndürür.
+        String firstWord = a.substring(0, firstGaps); //substring(something) kalıbı ilk boşluktan sonrasınık yazdırdı
+        int lastGaps = a.lastIndexOf(" ");
+        String lastWord = a.substring(lastGaps);
+
+        System.out.println(lastWord);
+
+        System.out.println(firstWord);
+        System.out.println(firstGaps);
+        System.out.println("8. karakter: " + a.charAt(8));
+
+
     }
+
+
 }
