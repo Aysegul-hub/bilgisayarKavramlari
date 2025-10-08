@@ -41,6 +41,8 @@ public class Main {
         System.out.println(firstWord);
         System.out.println(firstGaps);
         System.out.println("8. karakter: " + a.charAt(8));
+        System.out.println("8. karakter: ");
+
 
 
     }
