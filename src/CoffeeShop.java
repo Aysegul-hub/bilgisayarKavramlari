@@ -10,7 +10,7 @@ public class CoffeeShop {
         System.out.println("A- Americano : $3.00 ");
         System.out.println("C- Cappuccino : $3.75 ");
         System.out.println("L- Latte : $4.00 ");
-        System.out.println("L- Latte : $4.00 ");
+        System.out.println("E- Espresso : $2.50 ");
         System.out.println("Please enter A,C,L or E :");
 
         String coffee = scans.nextLine().toUpperCase();
