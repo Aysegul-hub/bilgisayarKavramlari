@@ -29,7 +29,7 @@ public class CoffeeShop {
                 System.out.println("Espresso costs $2.50");
                 break;
             default :
-                System.out.println("Invalid Letter!");
+                System.out.println(" Invalid Letter!");
 
 
         }
