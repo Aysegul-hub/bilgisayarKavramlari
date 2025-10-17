@@ -5,7 +5,7 @@ public class CoffeeShop {
 
         Scanner scans = new Scanner(System.in);
 
-        System.out.println("Hello , welcome to our coffee shop!");
+        System.out.println("Hello , Welcome to our coffee shop!");
         System.out.println("Menu: ");
         System.out.println("A- Americano : $3.00 ");
         System.out.println("C- Cappuccino : $3.75 ");
