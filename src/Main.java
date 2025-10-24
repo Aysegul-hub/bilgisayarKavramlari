@@ -9,13 +9,13 @@ public class Main {
         obj2.incrementCounter();*/
 
 
-      /*  Book book1 = new Book();
+        Book book1 = new Book();
         Book book2 = new Book("Java 101", "James Gosling", 150.0);
         book1.showDetails();
-        book2.showDetails();*/
+        book2.showDetails();
 
 
-        /*Student student1 = new Student();
+        Student student1 = new Student();
 
 
 
@@ -25,7 +25,7 @@ public class Main {
 
         student1.info();
         student2.info();
-        student3.info();*/
+        student3.info();
 
 
         Student s1 = new Student();
