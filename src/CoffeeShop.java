@@ -20,7 +20,7 @@ public class CoffeeShop {
                 System.out.println("Americano costs $3.00");
                 break;
             case "C" :
-                System.out.println("Cappuccino costsw $3.75");
+                System.out.println("Cappuccino costs $3.75");
                 break;
             case "L":
                 System.out.println("Latte costs $4.00");
