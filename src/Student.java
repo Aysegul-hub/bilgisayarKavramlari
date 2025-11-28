@@ -5,7 +5,7 @@ public class Student {
     boolean isJunior;
     char gender;
 
-    public Student() { //parametresiz constructor
+    public Student(String ayşegülDelialioğlu, String istanbul) { //parametresiz constructor
         name = "-";
         age = 0;
         isJunior = false;
@@ -31,7 +31,7 @@ public class Student {
 
     public static void main(String[] args){
 
-        Student student1 = new Student(); // parametresiz olduğu için default döndürecek
+        Student student1 = new Student("Ayşegül Delialioğlu", "Istanbul"); // parametresiz olduğu için default döndürecek
 
         Student student2 = new Student("Aysegul",20,true,'F');
         Student student3 = new Student("Abdullah", 22,false, 'M');
@@ -41,7 +41,7 @@ public class Student {
         student3.info();
 
 
-        Student s1 = new Student();
+        Student s1 = new Student("Ayşegül Delialioğlu", "Istanbul");
         System.out.println("Before assigning new values :");
         System.out.println("Name :" + s1.name);
         System.out.println("Age :" + s1.age);
@@ -62,4 +62,13 @@ public class Student {
         s1.info();
 
     }
+
+    public void addCourseGrade(String seng201, int i) {
+
+    }
+
+    public void printGrades() {
+    }
+
+
 }
