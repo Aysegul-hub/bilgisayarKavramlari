@@ -1,79 +1,75 @@
 public class Product {
 
+    private static int idCounter = 1000;
+
+    private final int productId;
     private String name;
-    private int quality;
+    private int quantity;
     private double price;
-    private int productId;
-    private static int idCounter;
 
-    public Product(){
-        this.name = " ";
-        this.quality = 0;
-        this.price = 0.0;
-        this.productId = 0;
-        idCounter++;
-
+    public Product() {
+        this("Unnamed", 0, 0.0);
     }
-    public Product(String name , int quality , double price){
-        this.name = name;
-        this.quality = quality;
-        this.price = price;
-        this.productId = productId;
-        idCounter++;
 
+    public Product(String name, int quantity, double price) {
+        this.productId = ++idCounter;
+        setName(name);
+        setQuantity(quantity);
+        setPrice(price);
     }
+
     public String getName() {
-
         return name;
     }
-    public int getQuality() {
 
-        return quality;
+    public int getQuantity() {
+        return quantity;
     }
-    public double getPrice() {
 
+    // Kept for backward compatibility with existing code
+    public int getQuality() {
+        return getQuantity();
+    }
+
+    public double getPrice() {
         return price;
     }
+
     public int getProductId() {
-
         return productId;
     }
-    public static int getCounterId(){
+
+    public static int getCounterId() {
         return idCounter;
-
     }
+
     public double getItemValue() {
-
-        return productId;
+        return price * quantity;
     }
-    public void setName(String name){
-        this.name = name;
+
+    public void setName(String name) {
+        this.name = (name == null || name.isBlank()) ? "Unnamed" : name.trim();
     }
-    public void setQuality(int quality){
-        if (quality < 0){
-            this.quality = 0;
-        }else{
-            this.quality = quality;
 
-        }
-
-
+    public void setQuantity(int quantity) {
+        this.quantity = Math.max(quantity, 0);
     }
-    public void setPrice(double price){
-        if (price < 0){
-            this.price = 0.0;
-        }else{
-            this.price = price;
 
-        }
-
+    public void setQuality(int quality) {
+        setQuantity(quality);
     }
+
+    public void setPrice(double price) {
+        this.price = Math.max(price, 0.0);
+    }
+
+    @Override
     public String toString() {
-        return "Product [ ID : " + productId + ", Name: " + name + "Quality : " + quality + "Price : " + price ;
+        return "Product{id=" + productId +
+                ", name='" + name + '\'' +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                ", value=" + String.format("%.2f", getItemValue()) +
+                '}';
     }
-
-
-
-
-
 }
