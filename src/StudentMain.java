@@ -3,26 +3,20 @@ public class StudentMain {
 
         System.out.println("=== STUDENT SYSTEM TEST ===\n");
 
-        // Yeni öğrenci oluştur
-        Student s1 = new Student("Ayşegül Delialioğlu", "Istanbul");
+        Student s1 = new Student("Aysegul Delialioglu", "Istanbul");
 
         System.out.println("Student Created:");
         System.out.println(s1);
 
-        // Ders ve not ekleme
         System.out.println("\nAdding courses & grades...\n");
         s1.addCourseGrade("SENG201", 85);
         s1.addCourseGrade("CENG101", 92);
         s1.addCourseGrade("PHYS101", 74);
 
-        // Tüm dersleri yazdırma
         System.out.println("Courses & Grades:");
         s1.printGrades();
 
-
-
-        // Yeni bir öğrenci daha oluşturalım
-        Student s2 = new Student("Dua Lipa", "Los Angelas");
+        Student s2 = new Student("Dua Lipa", 22, true, 'F', "Los Angeles");
 
         System.out.println("\n\nStudent Created:");
         System.out.println(s2);
@@ -33,8 +27,6 @@ public class StudentMain {
         System.out.println("\nCourses & Grades:");
         s2.printGrades();
 
-
-
         System.out.println("\n=== END OF TEST ===");
-        }
     }
+}
